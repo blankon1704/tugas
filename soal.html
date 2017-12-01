@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>soal</title>
+</head>
+<body>
+    <script>
+        var nama = prompt("siapa namamu?")
+        var c = " cukup"
+        var b = " baik"
+        var a = " sangat baik"
+        var score = 0
+        const soal1 = {
+            "soal":"8 X 9",
+            "jawaban":"72"
+        }
+        var jwb1 = prompt(soal1.soal+ ", berapakah jawabnya?")
+        if (jwb1 == soal1.jawaban) {
+            score++
+        }
+    
+        const soal2 = {
+            "soal":"12x2x56x23x0x32x2345",
+            "jawaban":"0"
+        }
+        var jwb2 = prompt(soal2.soal+ ", berapakah jawabnya?")
+        if (jwb2 == soal2.jawaban) {
+            score++
+        }
+    
+        const soal3 = {
+            "soal":"mengapa benda yang kita lempar selalu jatuh ke bawah karena adanya gaya?",
+            "jawaban":"gravitasi"
+        }
+        var jwb3 = prompt(soal3.soal)
+        if (jwb3 == soal3.jawaban || "Gravitasi") {
+            score++
+        }
+    
+        const soal4 = {
+            "soal":"sapi adalah hewan pemakan rumput, sebutan apa hewan pemakan tumbuhan itu?",
+            "jawaban":"herbivora"
+        }
+        var jwb4 = prompt(soal4.soal)
+        if (jwb4 == soal4.jawaban || "Herbivora") {
+            score++
+        }
+
+        const soal5 = {
+            "soal":"good morning, arti dari kata tersebut ialah selamat?",
+            "jawaban":"pagi"
+        }
+        var jwb5 = prompt(soal5.soal)
+        if (jwb4 == soal5.jawaban || "Pagi") {
+            score++
+        }
+
+        const soal6 = {
+            "soal":"grandfather, sebutan untuk seorang?",
+            "jawaban":"kakek"
+        }
+        var jwb6 = prompt(soal6.soal)
+        if (jwb6 == soal6.jawaban || "Kakek") {
+            score++
+        }
+
+        const soal7 = {
+            "soal":"berapakah provinsi di indonesia?",
+            "jawaban":"34"
+        }
+        var jwb7 = prompt(soal7.soal)
+        if (jwb7 == soal7.jawaban) {
+            score++
+        }
+
+        const soal8 = {
+            "soal":"ibukota indonesia ada di?",
+            "jawaban":"jakarta"
+        }
+        var jwb8 = prompt(soal8.soal)
+        if (jwb8 == soal8.jawaban || "Jakarta") {
+            score++
+        }
+
+        const soal9 = {
+            "soal":"lambang negara indonesia adalah?",
+            "jawaban":"garuda"
+        }
+        var jwb9 = prompt(soal9.soal)
+        if (jwb9 == soal9.soal || "Garuda") {
+            score++
+        }
+
+        const soal10 = {
+            "soal":"lagu kebangsaan indonesia adalah?",
+            "jawaban":"indonesia raya"
+        }
+        var jwb10 = prompt(soal10.soal)
+        if (jwb10 == soal10.jawaban || "Indonesia raya" && "Indonesia Raya") {
+            score++
+        }
+        if (score == 10) {
+            alert(nama + " nilai kamu : " + score * 10 + a)
+        } else if (10 > score && score > 6) {
+            alert(nama + " nilai kamu : " + score * 10 + b)
+        } else {
+            alert(nama + " nilai kamu : " + score * 10 + c)
+        }
+    </script>
+</body>
+
+</html>
